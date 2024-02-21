@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: rgb(67, 68, 68);
+  color: white;
+  height: 50px;
+  padding: 20px;
+}
+.header{display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  gap: 30px;
+}
+label{
+  font-size: 50px;
+}
+select{
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.button{
+  padding: 5px;
+  border-radius: 10px;
+  animation: 0.5s;
+  cursor: pointer;
+}
+.button:hover{
+  color: #ccc;
+  border: 2px solid #ccc;
+}
+#quote{
+  color: red;
+  font-size: 30px;
+  background: #ccc;
+  width: 90vw;
+  border-radius: 10px;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .size{
+    display: flex;
+    gap: 100px;
+    
+  }
+  .size-btn{
+    font-size: 30px;
+    border-radius: 50px;
+    width: 35px;
+    height:35px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  /* styles.css */
+body.dark-mode {
+    background-color: rgb(21, 21, 21);
+    color: #fff;
+  }
+  body.dark-mode header {
+    background-color: rgb(7, 0, 11);
+    color: #fff;
+  }
+  
+  
